@@ -217,7 +217,8 @@
     }
 
     /* ============================================
-       Typing Effect for Hero Subtitle (Optional)
+       Typing Effect for Hero Subtitle
+       Uses a stable container with cursor to prevent layout shift
        ============================================ */
     const heroSubtitle = document.querySelector('.hero-subtitle');
     if (heroSubtitle) {
@@ -231,26 +232,40 @@
         let charIndex = 0;
         let isDeleting = false;
 
+        // Build the structure: <span class="typing-text"></span><span class="typing-cursor"></span>
+        // In RTL, the text span appears on the right, cursor on the left (visually at end of text)
+        heroSubtitle.innerHTML = '';
+        const textSpan = document.createElement('span');
+        textSpan.className = 'typing-text';
+        textSpan.textContent = '\u00A0'; // non-breaking space to maintain width
+        const cursor = document.createElement('span');
+        cursor.className = 'typing-cursor';
+        cursor.setAttribute('aria-hidden', 'true');
+        heroSubtitle.appendChild(textSpan);
+        heroSubtitle.appendChild(cursor);
+
         function typeText() {
             const currentText = texts[textIndex];
 
             if (isDeleting) {
-                heroSubtitle.textContent = currentText.substring(0, charIndex - 1);
                 charIndex--;
             } else {
-                heroSubtitle.textContent = currentText.substring(0, charIndex + 1);
                 charIndex++;
             }
 
-            let typeSpeed = isDeleting ? 50 : 100;
+            // Update text - use nbsp when empty to keep cursor at consistent position
+            const newText = currentText.substring(0, charIndex);
+            textSpan.textContent = newText || '\u00A0';
+
+            let typeSpeed = isDeleting ? 40 : 90;
 
             if (!isDeleting && charIndex === currentText.length) {
-                typeSpeed = 2000;
+                typeSpeed = 2200;
                 isDeleting = true;
             } else if (isDeleting && charIndex === 0) {
                 isDeleting = false;
                 textIndex = (textIndex + 1) % texts.length;
-                typeSpeed = 500;
+                typeSpeed = 400;
             }
 
             setTimeout(typeText, typeSpeed);
@@ -258,9 +273,8 @@
 
         // Start typing effect after initial delay
         setTimeout(function () {
-            heroSubtitle.textContent = '';
             typeText();
-        }, 3000);
+        }, 2000);
     }
 
     /* ============================================

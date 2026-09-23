@@ -355,6 +355,29 @@ body {
     color: var(--text-secondary);
     font-weight: 500;
     margin-bottom: 24px;
+    /* Fixed height to prevent layout shift when text is empty during typing */
+    min-height: 2.4em;
+    line-height: 1.4;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.typing-cursor {
+    display: inline-block;
+    width: 3px;
+    height: 1.1em;
+    background: var(--accent);
+    border-radius: 1px;
+    flex-shrink: 0;
+    animation: cursorBlink 1s infinite;
+    box-shadow: 0 0 8px var(--accent-glow);
+}
+
+@keyframes cursorBlink {
+    0%, 49% { opacity: 1; }
+    50%, 100% { opacity: 0.2; }
 }
 
 .hero-description {
