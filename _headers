@@ -1,0 +1,19 @@
+# HEADERS file for Cloudflare Pages
+# تنظیمات امنیتی و کش
+
+/*
+  X-Frame-Options: SAMEORIGIN
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=()
+
+# Cache static assets for 1 year
+/*.css
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.js
+  Cache-Control: public, max-age=31536000, immutable
+
+# HTML files - short cache
+/*.html
+  Cache-Control: public, max-age=3600, must-revalidate

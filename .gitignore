@@ -1,0 +1,18 @@
+# Files and folders to ignore by git
+.DS_Store
+Thumbs.db
+node_modules/
+.env
+.env.local
+.DS_Store
+*.log
+.cache/
+dist/
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Local preview screenshots (not needed in production)
+preview-*.png
+*.zip

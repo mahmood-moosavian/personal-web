@@ -1,0 +1,6 @@
+# Redirects file for Cloudflare Pages
+# این فایل مسیرهای redirects را تعریف می‌کند
+
+# در صورت نیاز به redirects، اینجا اضافه کنید
+# مثال:
+# /old-path  /new-path  301
