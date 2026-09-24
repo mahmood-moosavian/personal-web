@@ -249,6 +249,7 @@ https://your-username.github.io
 
 ## 📞 تماس
 
+- **موبایل:** 09154165210
 - **ایمیل:** contact@smmousanian.ir
 - **تلگرام:** [@smmousanian](https://t.me/)
 
