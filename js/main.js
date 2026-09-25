@@ -184,7 +184,7 @@
             // For static hosting, use Formspree, Getform, or EmailJS
             setTimeout(function () {
                 // Build mailto link as fallback for static hosting
-                const mailtoLink = 'mailto:contact@smmousavian.ir' +
+                const mailtoLink = 'mailto:mohandes.moosavian@gmail.com' +
                     '?subject=' + encodeURIComponent('تماس از وب‌سایت: ' + subject) +
                     '&body=' + encodeURIComponent(
                         'نام: ' + name + '\n' +
@@ -315,6 +315,6 @@
     console.log('%cسلام! 👋', styles);
     console.log('%cاگه به دنبال یه توسعه‌دهنده فول‌استک می‌گردی، درست اومدی!', 'color: #a1a1b3; font-family: monospace;');
     console.log('%cسید محمود موسویان پور | مهندس نرم‌افزار', 'color: #06b6d4; font-family: monospace;');
-    console.log('%c📧 contact@smmousavian.ir', 'color: #a1a1b3; font-family: monospace;');
+    console.log('%c📧 mohandes.moosavian@gmail.com', 'color: #a1a1b3; font-family: monospace;');
 
 })();
