@@ -1,0 +1,16 @@
+# robots.txt - allows all crawlers
+# سید محمود موسویان پور - personal website
+
+User-agent: *
+Allow: /
+
+# Block crawling of internal/private files
+Disallow: /scripts/
+Disallow: /*.log$
+Disallow: /*.zip$
+
+# Sitemap location
+Sitemap: https://mohandesmoosavian.ir/sitemap.xml
+
+# Crawl delay (be nice to servers)
+Crawl-delay: 1

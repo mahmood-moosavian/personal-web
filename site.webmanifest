@@ -1,0 +1,19 @@
+{
+    "name": "سید محمود موسویان پور | مهندس نرم‌افزار",
+    "short_name": "SMM",
+    "description": "وب‌سایت شخصی سید محمود موسویان پور - مهندس نرم‌افزار و توسعه‌دهنده فول‌استک",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#0a0a0f",
+    "theme_color": "#0a0a0f",
+    "lang": "fa-IR",
+    "dir": "rtl",
+    "icons": [
+        {
+            "src": "assets/favicon.svg",
+            "sizes": "any",
+            "type": "image/svg+xml",
+            "purpose": "any"
+        }
+    ]
+}

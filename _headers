@@ -1,4 +1,4 @@
-# HEADERS file for Cloudflare Pages
+# Headers for Cloudflare Pages / GitHub Pages
 # تنظیمات امنیتی و کش
 
 /*
@@ -6,14 +6,38 @@
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: geolocation=(), microphone=(), camera=()
+  X-XSS-Protection: 1; mode=block
 
-# Cache static assets for 1 year
+# Cache fonts for 1 year (immutable)
+/assets/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+  Access-Control-Allow-Origin: *
+
+# Cache CSS/JS for 1 year (immutable)
 /*.css
   Cache-Control: public, max-age=31536000, immutable
 
 /*.js
   Cache-Control: public, max-age=31536000, immutable
 
-# HTML files - short cache
+# Cache images for 1 year
+/assets/*.svg
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/*.png
+  Cache-Control: public, max-age=31536000, immutable
+
+# HTML files - short cache for updates
 /*.html
+  Cache-Control: public, max-age=3600, must-revalidate
+
+# robots.txt and sitemap.xml - short cache
+/robots.txt
+  Cache-Control: public, max-age=3600, must-revalidate
+
+/sitemap.xml
+  Cache-Control: public, max-age=3600, must-revalidate
+
+# Manifest - short cache
+/site.webmanifest
   Cache-Control: public, max-age=3600, must-revalidate
