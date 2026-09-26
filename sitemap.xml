@@ -5,19 +5,25 @@
 
     <url>
         <loc>https://mohandesmoosavian.ir/</loc>
-        <lastmod>2026-09-26T10:00:00+03:30</lastmod>
+        <lastmod>2026-09-26T20:00:00+03:30</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
         <xhtml:link rel="alternate" hreflang="fa-IR" href="https://mohandesmoosavian.ir/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://mohandesmoosavian.ir/"/>
         <image:image>
             <image:loc>https://mohandesmoosavian.ir/assets/og-image.png</image:loc>
             <image:title>سید محمود موسویان پور | مهندس نرم‌افزار و توسعه‌دهنده فول‌استک</image:title>
             <image:caption>وب‌سایت شخصی سید محمود موسویان پور - خدمات توسعه وب، وردپرس و پنل‌های سازمانی</image:caption>
             <image:geo_location>Iran</image:geo_location>
+            <image:license>https://mohandesmoosavian.ir/</image:license>
         </image:image>
         <image:image>
             <image:loc>https://mohandesmoosavian.ir/assets/favicon.svg</image:loc>
-            <image:title>favicon</image:title>
+            <image:title>سید محمود موسویان پور - لوگو</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://mohandesmoosavian.ir/assets/apple-touch-icon.png</image:loc>
+            <image:title>سید محمود موسویان پور - آیکون</image:title>
         </image:image>
     </url>
 
