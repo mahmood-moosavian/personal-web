@@ -59,80 +59,165 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- JSON-LD Structured Data - Person Schema for SEO -->
+    <!-- JSON-LD Structured Data - Using @graph for multiple schemas -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "Person",
-        "@id": "https://mohandesmoosavian.ir/#person",
-        "name": "سید محمود موسویان پور",
-        "alternateName": "Seyed Mahmoud Mousavian Pour",
-        "givenName": "سید محمود",
-        "familyName": "موسویان پور",
-        "jobTitle": "مهندس نرم‌افزار",
-        "description": "مهندس نرم‌افزار و توسعه‌دهنده فول‌استک. متخصص در طراحی وب‌سایت‌های شرکتی، فروشگاهی، قالب‌های اختصاصی وردپرس و پنل‌های سازمانی.",
-        "url": "https://mohandesmoosavian.ir/",
-        "image": "https://mohandesmoosavian.ir/assets/og-image.jpg",
-        "email": "mailto:mohandes.moosavian@gmail.com",
-        "telephone": "+989371990151",
-        "knowsAbout": [
-            "Full Stack Development",
-            "WordPress Development",
-            "PHP",
-            "Laravel",
-            "React",
-            "Node.js",
-            "JavaScript",
-            "Web Development",
-            "Database Design",
-            "UI/UX Design"
-        ],
-        "knowsLanguage": ["fa", "en"],
-        "nationality": "Iranian",
-        "address": {
-            "@type": "PostalAddress",
-            "addressCountry": "IR"
-        },
-        "sameAs": [
-            "https://t.me/mohandesmoosavian",
-            "https://github.com/mahmood-moosavian"
-        ],
-        "worksFor": {
-            "@type": "Organization",
-            "name": "Freelance Developer"
-        },
-        "offers": {
-            "@type": "Offer",
-            "itemOffered": {
-                "@type": "Service",
-                "name": "توسعه وب‌سایت و وردپرس",
-                "description": "طراحی و پیاده‌سازی وب‌سایت‌های شرکتی، فروشگاهی، قالب‌های اختصاصی وردپرس و پنل‌های سازمانی"
-            }
-        }
-    }
-    </script>
-
-    <!-- JSON-LD Website Schema -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "@id": "https://mohandesmoosavian.ir/#website",
-        "url": "https://mohandesmoosavian.ir/",
-        "name": "سید محمود موسویان پور | مهندس نرم‌افزار",
-        "description": "وب‌سایت شخصی سید محمود موسویان پور - مهندس نرم‌افزار و توسعه‌دهنده فول‌استک",
-        "inLanguage": "fa-IR",
-        "publisher": {
-            "@id": "https://mohandesmoosavian.ir/#person"
-        },
-        "potentialAction": {
-            "@type": "SearchAction",
-            "target": {
-                "@type": "EntryPoint",
-                "urlTemplate": "https://mohandesmoosavian.ir/?s={search_term_string}"
+        "@graph": [
+            {
+                "@type": "Person",
+                "@id": "https://mohandesmoosavian.ir/#person",
+                "name": "سید محمود موسویان پور",
+                "alternateName": "Seyed Mahmoud Mousavian Pour",
+                "givenName": "سید محمود",
+                "familyName": "موسویان پور",
+                "jobTitle": "مهندس نرم‌افزار و توسعه‌دهنده فول‌استک",
+                "description": "مهندس نرم‌افزار و توسعه‌دهنده فول‌استک. متخصص در طراحی وب‌سایت‌های شرکتی، فروشگاهی، قالب‌های اختصاصی وردپرس و پنل‌های سازمانی.",
+                "url": "https://mohandesmoosavian.ir/",
+                "image": "https://mohandesmoosavian.ir/assets/og-image.svg",
+                "email": "mohandes.moosavian@gmail.com",
+                "telephone": "+989371990151",
+                "knowsAbout": [
+                    "Full Stack Development",
+                    "WordPress Development",
+                    "PHP",
+                    "Laravel",
+                    "React",
+                    "Node.js",
+                    "JavaScript",
+                    "Web Development",
+                    "Database Design",
+                    "UI/UX Design"
+                ],
+                "knowsLanguage": ["fa", "en"],
+                "nationality": "Iranian",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressCountry": "IR"
+                },
+                "sameAs": [
+                    "https://t.me/mohandesmoosavian",
+                    "https://github.com/mahmood-moosavian"
+                ]
             },
-            "query-input": "required name=search_term_string"
-        }
+            {
+                "@type": "WebSite",
+                "@id": "https://mohandesmoosavian.ir/#website",
+                "url": "https://mohandesmoosavian.ir/",
+                "name": "سید محمود موسویان پور | مهندس نرم‌افزار",
+                "description": "وب‌سایت شخصی سید محمود موسویان پور - مهندس نرم‌افزار و توسعه‌دهنده فول‌استک",
+                "inLanguage": "fa-IR",
+                "publisher": {
+                    "@id": "https://mohandesmoosavian.ir/#person"
+                },
+                "potentialAction": {
+                    "@type": "SearchAction",
+                    "target": {
+                        "@type": "EntryPoint",
+                        "urlTemplate": "https://mohandesmoosavian.ir/?s={search_term_string}"
+                    },
+                    "query-input": "required name=search_term_string"
+                }
+            },
+            {
+                "@type": "ProfessionalService",
+                "@id": "https://mohandesmoosavian.ir/#service",
+                "name": "خدمات توسعه وب‌سایت و وردپرس - سید محمود موسویان پور",
+                "description": "طراحی و پیاده‌سازی وب‌سایت‌های شرکتی، فروشگاهی، قالب‌های اختصاصی وردپرس و پنل‌های سازمانی. همکاری پروژه‌ای با شرکت‌ها و سازمان‌ها.",
+                "url": "https://mohandesmoosavian.ir/",
+                "image": "https://mohandesmoosavian.ir/assets/og-image.svg",
+                "priceRange": "$$",
+                "areaServed": {
+                    "@type": "Country",
+                    "name": "Iran"
+                },
+                "serviceType": "Web Development, WordPress Development, Custom Web Application Development",
+                "provider": {
+                    "@id": "https://mohandesmoosavian.ir/#person"
+                },
+                "hasOfferCatalog": {
+                    "@type": "OfferCatalog",
+                    "name": "خدمات حرفه‌ای توسعه وب",
+                    "itemListElement": [
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "توسعه فول‌استک",
+                                "description": "طراحی و پیاده‌سازی وب‌اپلیکیشن‌های مدرن و مقیاس‌پذیر با React، Node.js و Laravel"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "وردپرس شرکتی",
+                                "description": "طراحی سایت کاتالوگ و فروشگاهی حرفه‌ای با وردپرس و ووکامرس"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "قالب اختصاصی وردپرس",
+                                "description": "پیاده‌سازی قالب‌های اختصاصی و کاملاً سفارشی وردپرس"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "پنل‌های اختصاصی سازمانی",
+                                "description": "تحلیل، طراحی و پیاده‌سازی پنل‌های مدیریتی اختصاصی برای شرکت‌ها و سازمان‌ها"
+                            }
+                        }
+                    ]
+                },
+                "contactPoint": {
+                    "@type": "ContactPoint",
+                    "telephone": "+989371990151",
+                    "email": "mohandes.moosavian@gmail.com",
+                    "contactType": "customer service",
+                    "availableLanguage": ["Persian", "English"]
+                }
+            },
+            {
+                "@type": "BreadcrumbList",
+                "@id": "https://mohandesmoosavian.ir/#breadcrumb",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "خانه",
+                        "item": "https://mohandesmoosavian.ir/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "درباره من",
+                        "item": "https://mohandesmoosavian.ir/#about"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": "خدمات",
+                        "item": "https://mohandesmoosavian.ir/#services"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 4,
+                        "name": "نمونه کار",
+                        "item": "https://mohandesmoosavian.ir/#portfolio"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 5,
+                        "name": "تماس",
+                        "item": "https://mohandesmoosavian.ir/#contact"
+                    }
+                ]
+            }
+        ]
     }
     </script>
 </head>

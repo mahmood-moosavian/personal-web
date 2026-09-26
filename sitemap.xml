@@ -11,37 +11,14 @@
         <xhtml:link rel="alternate" hreflang="fa-IR" href="https://mohandesmoosavian.ir/"/>
         <image:image>
             <image:loc>https://mohandesmoosavian.ir/assets/og-image.svg</image:loc>
-            <image:title>سید محمود موسویان پور | مهندس نرم‌افزار</image:title>
-            <image:caption>وب‌سایت شخصی سید محمود موسویان پور</image:caption>
+            <image:title>سید محمود موسویان پور | مهندس نرم‌افزار و توسعه‌دهنده فول‌استک</image:title>
+            <image:caption>وب‌سایت شخصی سید محمود موسویان پور - خدمات توسعه وب، وردپرس و پنل‌های سازمانی</image:caption>
+            <image:geo_location>Iran</image:geo_location>
         </image:image>
-    </url>
-
-    <url>
-        <loc>https://mohandesmoosavian.ir/#about</loc>
-        <lastmod>2026-09-26T10:00:00+03:30</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <url>
-        <loc>https://mohandesmoosavian.ir/#services</loc>
-        <lastmod>2026-09-26T10:00:00+03:30</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-
-    <url>
-        <loc>https://mohandesmoosavian.ir/#portfolio</loc>
-        <lastmod>2026-09-26T10:00:00+03:30</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
-    </url>
-
-    <url>
-        <loc>https://mohandesmoosavian.ir/#contact</loc>
-        <lastmod>2026-09-26T10:00:00+03:30</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://mohandesmoosavian.ir/assets/favicon.svg</image:loc>
+            <image:title>favicon</image:title>
+        </image:image>
     </url>
 
 </urlset>
